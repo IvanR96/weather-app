@@ -33,7 +33,7 @@ function App() {
     setError("");
 
     try {
-    const url = `https://api.openweathermap.org/data/3.0/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     const response = await axios.get(url);
     setWeatherData(response.data);
   } catch (error) {
